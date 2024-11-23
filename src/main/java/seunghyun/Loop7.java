@@ -11,7 +11,7 @@ public class Loop7 {
             int sum = 0;
             int A = sc.nextInt();
             int B = sc.nextInt();
-            if (0 > A || A > 10 || 0 > B || B > 10) {
+            if (1 > A || A > 10 || 1 > B || B > 10) {
                 throw new IllegalArgumentException();
             }
             sum = A + B;
