@@ -9,6 +9,9 @@ public class Loop11 {
         while (true) {
             int A = sc.nextInt();
             int B = sc.nextInt();
+            if (0 > A || A > 10 || 0 > B || B > 10) {
+                throw new IllegalArgumentException();
+            }
             if (A == 0 || B == 0) {
                 break;
             }
