@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class TimeComplexity6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Long n = sc.nextLong();
-        if (1 > n || n > 500000) {
-            throw new IllegalArgumentException();
-        }
+        int a1 = sc.nextInt();
+        int a0 = sc.nextInt();
+        int c = sc.nextInt();
+        int n0 = sc.nextInt();
 
-        System.out.println((n * (n - 1) * (n - 2)) / 6);
-        System.out.println(3);
+        if (a1 <= c && a1 * n0 + a0 <= c * n0) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
+        }
     }
 }
