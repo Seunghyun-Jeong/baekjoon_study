@@ -5,30 +5,14 @@ import java.util.Scanner;
 public class DivMulDec2nd8 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int limit = 1000000;
-        boolean[] isPrime = new boolean[limit + 1];
-
-        for (int i = 2; i <= limit; i++) {
-            isPrime[i] = true;
+        int N = sc.nextInt();
+        if (1 > N || N > 2100000000) {
+            throw new IllegalArgumentException();
         }
-        for (int i = 2; i * i <= limit; i++) {
-            if (isPrime[i]) {
-                for (int j = i * i; j <= limit; j += i) {
-                    isPrime[j] = false;
-                }
-            }
+        int count = 0;
+        for (int i = 1; i * i <= N; i++) {
+            count++;
         }
-
-        int T = sc.nextInt();
-        for (int t = 0; t < T; t++) {
-            int N = sc.nextInt();
-            int count = 0;
-            for (int i = 2; i <= N / 2; i++) {
-                if (isPrime[i] && isPrime[N - i]) {
-                    count++;
-                }
-            }
-            System.out.println(count);
-        }
+        System.out.println(count);
     }
 }
