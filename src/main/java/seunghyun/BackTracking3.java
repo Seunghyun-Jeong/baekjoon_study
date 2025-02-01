@@ -2,7 +2,7 @@ package seunghyun;
 
 import java.util.Scanner;
 
-public class Backtracking3 {
+public class BackTracking3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
