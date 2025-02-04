@@ -2,7 +2,7 @@ package seunghyun;
 
 import java.util.Scanner;
 
-public class BackTracking6 {
+public class Backtracking6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[][] board = new int[9][9];
