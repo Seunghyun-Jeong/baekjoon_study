@@ -5,7 +5,7 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class GraphTraversal10 {
-    private static int MAX = 100000;
+    private static final int MAX = 100000;
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
